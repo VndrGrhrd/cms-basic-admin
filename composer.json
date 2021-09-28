@@ -1,0 +1,25 @@
+{
+    "name": "teste/datalayer",
+    "description": "teste back em php",
+    "type": "project",
+    "require": {
+        "coffeecode/datalayer": "1.1.8",
+        "delight-im/auth": "dev-master"
+    },
+    "license": "private",
+    "autoload": {
+        "psr-4": {
+            "Source\\": "source/"
+        },
+        "files": [
+            "source/Config.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "webvoxbrazil",
+            "email": "web@voxbrazil.com.br"
+        }
+    ],
+    "minimum-stability": "dev"
+}
