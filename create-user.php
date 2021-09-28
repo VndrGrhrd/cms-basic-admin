@@ -5,7 +5,8 @@
 
 <H1>CRIAR NOVO USUÁRIO</H1>
 <hr><br>
-<form action="source/auth/Add_user.php" method="post">
+<form id="form_add_user" method="post">
+    <!-- <form action="source/auth/Add_user.php" method="post"> -->
     <div>
         <label>Nome do usuario *
             <input type="text" name="usuario" id="usuario">
@@ -23,7 +24,7 @@
         </label>
     </div>
     <div>
-        <input type="submit" value="CRIAR">
+        <input id="send_add_user" type="submit" value="CRIAR">
     </div>
 </form>
 <?php require __DIR__ . '/footer.php' ?>

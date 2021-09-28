@@ -11,7 +11,8 @@
 <body>
     <H1>CRIAR NOVO USUÁRIO</H1>
     <hr><br>
-    <form action="source/auth/login.php" method="post">
+    <form id="form_login" method="post">
+        <!-- <form action="source/auth/login.php" method="post"> -->
         <div>
             <label>Email do usuario *
                 <input type="email" name="email" id="email">
@@ -23,7 +24,7 @@
             </label>
         </div>
         <div>
-            <input type="submit" value="ENTRAR">
+            <input id="send_login" type="submit" value="ENTRAR">
         </div>
     </form>
 </body>
