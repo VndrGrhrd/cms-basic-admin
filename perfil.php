@@ -15,7 +15,7 @@
         </section>
         <section id="content-nav">
             <div id="content-page">
-                <h1>Bem Vindo ao Painel de Administração de seu site</h1>
+                <?php require __DIR__ . '/components/pages/index.php' ?>
             </div>
         </section>
     </nav>

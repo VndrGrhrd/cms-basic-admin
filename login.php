@@ -42,6 +42,37 @@
     </section>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        // Maquina de escrever
+        window.addEventListener('load', function() {
+            let text = document.getElementById("text_digit")
+            let texto = "Bem vindo a área de administração de seu site. Digite credenciais para entrar para acessar"
+            const email = document.getElementById("email")
+            const password = document.getElementById("password")
+            const send_login = document.getElementById("send_login")
+            texto = texto.split('')
+            texto.forEach((item, i) => {
+                setTimeout(function() {
+                    text.innerHTML += item
+                }, 75 * i)
+                setTimeout(function() {
+                    email.style.display = ''
+                    email.focus()
+                }, 7000)
+            })
+            email.addEventListener('focus', function() {
+                setTimeout(function() {
+                    password.style.display = ''
+                }, 2000)
+            })
+            password.addEventListener('focus', function() {
+                setTimeout(function() {
+                    send_login.style.display = ''
+                }, 2000)
+
+            })
+        })
+    </script>
 </body>
 
 </html>
