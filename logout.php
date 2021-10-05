@@ -9,7 +9,7 @@ $auth->logOut();
 try {
     $auth->logOutEverywhereElse();
 } catch (\Delight\Auth\NotLoggedInException $e) {
-    die('Not logged in');
+    header('Location: login');
 }
 
 // or
@@ -17,5 +17,5 @@ try {
 try {
     $auth->logOutEverywhere();
 } catch (\Delight\Auth\NotLoggedInException $e) {
-    die('Not logged in');
+    header('Location: login');
 }

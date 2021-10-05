@@ -1,33 +1,27 @@
 <?php
-// require __DIR__ . '/head.php' 
+require __DIR__ . '/head.php'
 ?>
-<title>Painel Adminsitrativo - CMS Basico</title>
-<link rel="stylesheet" href="style/layout.css">
+<title>Painel Adminsitrativo - Hiper Game Badotti</title>
 <main id="body">
     <header id="header-nav">
-        <?php require __DIR__ . '/components/layout/header-nav.php' ?>
+        <?php require 'components/layout/header-nav.php' ?>
     </header>
     <nav>
         <section id="menu-nav">
             <div id="menu-section">
-                <?php require __DIR__ . '/components/layout/menu.nav.php' ?>
+                <?php require 'components/layout/menu.nav.php' ?>
             </div>
         </section>
         <section id="content-nav">
             <div id="content-page">
-                <h1>Bem Vindo ao Painel de Administração de seu site</h1>
+                <h1>Bem Vindo ao Painel de Administração do Hiper Game Badotti</h1>
+                <img src="/image/Hiper-game-60-anos.png" alt="" style="width: 300px; display: block; margin: 0 auto;">
             </div>
         </section>
     </nav>
     <footer id="footer-nav">
-        <p id="footer-info">CMS Basico para Administrar seu Site. </p>
+        <p id="footer-info">Painel Adminsitrativo - Hiper Game Badotti </p>
     </footer>
 </main>
-<script>
-    window.addEventListener('load', () => {
-        let title = document.getElementsByTagName('title')
-        document.getElementById('page-current').innerText = title[0].innerText
-    })
-</script>
 <?php require __DIR__ . '/footer.php' ?>
 <!-- https://vinteum.com/enviando-email-com-ajax-php-smtp/ -->

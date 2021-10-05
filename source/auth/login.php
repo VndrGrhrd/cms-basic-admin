@@ -5,7 +5,7 @@ require __DIR__ . '/../Auth.php';
 try {
     $auth->login($_POST['email'], $_POST['password']);
 
-    header('Location: http://localhost/admin:composer/');
+    header('Location: /admin');
 } catch (\Delight\Auth\InvalidEmailException $e) {
     die('Endereço de e-mail errado');
 } catch (\Delight\Auth\InvalidPasswordException $e) {
