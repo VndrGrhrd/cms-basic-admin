@@ -10,7 +10,7 @@ $("#send_add_user").click(function () {
     url: "/admin/source/auth/Add_user.php",
     async: true,
     data: formData,
-    sucess: function (data) {
+    complete: function (data) {
       alert("usuario cadastrado");
     },
     error: function (data) {

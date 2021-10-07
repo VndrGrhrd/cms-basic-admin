@@ -2,7 +2,7 @@
  
 // Load the database configuration file 
 require __DIR__ . '/../vendor/autoload.php';
-require __DIR__. '/../../services/db.php';
+require __DIR__. '/../source/medoo_config.php';
 use CsvHilario\ExportCsv\ExportCsv;
 
 $data = $database->select("usuarios", '*',[

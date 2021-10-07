@@ -1,7 +1,7 @@
 <?php
 require __DIR__ . '/head.php'
 ?>
-<title>Painel Adminsitrativo - Hiper Game Badotti</title>
+<title>Painel Adminsitrativo Basic CMS  </title>
 <main id="body">
     <header id="header-nav">
         <?php require 'components/layout/header-nav.php' ?>
@@ -14,13 +14,12 @@ require __DIR__ . '/head.php'
         </section>
         <section id="content-nav">
             <div id="content-page">
-                <h1>Bem Vindo ao Painel de Administração do Hiper Game Badotti</h1>
-                <img src="/image/Hiper-game-60-anos.png" alt="" style="width: 300px; display: block; margin: 0 auto;">
+                <h1>Bem Vindo ao Painel de Administração</h1>
             </div>
         </section>
     </nav>
     <footer id="footer-nav">
-        <p id="footer-info">Painel Adminsitrativo - Hiper Game Badotti </p>
+        <p id="footer-info">Painel Adminsitrativo Basic CMS </p>
     </footer>
 </main>
 <?php require __DIR__ . '/footer.php' ?>

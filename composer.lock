@@ -4,30 +4,41 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c1d4037dd12d1f40fc0ce9802bb70814",
+    "content-hash": "f8e6ac219957129ee9a5ed7fd58bdbe3",
     "packages": [
         {
-            "name": "coffeecode/datalayer",
-            "version": "1.1.8",
+            "name": "catfan/medoo",
+            "version": "v2.1.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/robsonvleite/datalayer.git",
-                "reference": "52e209190752eccc0bfd8ff3abcdd607ed4c01c1"
+                "url": "https://github.com/catfan/Medoo.git",
+                "reference": "96c66aee57c0840b560f5c2546df5a5f25534045"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/robsonvleite/datalayer/zipball/52e209190752eccc0bfd8ff3abcdd607ed4c01c1",
-                "reference": "52e209190752eccc0bfd8ff3abcdd607ed4c01c1",
+                "url": "https://api.github.com/repos/catfan/Medoo/zipball/96c66aee57c0840b560f5c2546df5a5f25534045",
+                "reference": "96c66aee57c0840b560f5c2546df5a5f25534045",
                 "shasum": ""
             },
             "require": {
                 "ext-pdo": "*",
-                "php": ">=7.2"
+                "php": ">=7.3"
             },
-            "type": "library",
+            "require-dev": {
+                "phpunit/phpunit": "^9.0"
+            },
+            "suggest": {
+                "ext-pdo_dblib": "For MSSQL or Sybase database on Linux/UNIX platform",
+                "ext-pdo_mysql": "For MySQL or MariaDB database",
+                "ext-pdo_oci": "For Oracle database",
+                "ext-pdo_pqsql": "For PostgreSQL database",
+                "ext-pdo_sqlite": "For SQLite database",
+                "ext-pdo_sqlsrv": "For MSSQL database on both Window/Liunx platform"
+            },
+            "type": "framework",
             "autoload": {
                 "psr-4": {
-                    "CoffeeCode\\DataLayer\\": "src"
+                    "Medoo\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -36,28 +47,36 @@
             ],
             "authors": [
                 {
-                    "name": "Robson V. Leite",
-                    "email": "cursos@upinside.com.br",
-                    "role": "Developer"
+                    "name": "Angel Lai",
+                    "email": "angel@medoo.in"
                 }
             ],
-            "description": "The data layer is a persistent abstraction component of your database that PDO",
-            "homepage": "http://www.upinside.com.br",
+            "description": "The lightweight PHP database framework to accelerate development",
+            "homepage": "https://medoo.in",
             "keywords": [
-                "Coffeecode",
-                "crud",
                 "database",
-                "delete",
-                "destroy",
-                "pdo",
-                "save",
-                "upinside"
+                "database library",
+                "lightweight",
+                "mariadb",
+                "mssql",
+                "mysql",
+                "oracle",
+                "php framework",
+                "postgresql",
+                "sql",
+                "sqlite"
             ],
             "support": {
-                "issues": "https://github.com/robsonvleite/datalayer/issues",
-                "source": "https://github.com/robsonvleite/datalayer/tree/1.1.8"
+                "issues": "https://github.com/catfan/Medoo/issues",
+                "source": "https://github.com/catfan/Medoo"
             },
-            "time": "2021-03-21T14:00:57+00:00"
+            "funding": [
+                {
+                    "url": "https://opencollective.com/medoo",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2021-07-27T11:03:44+00:00"
         },
         {
             "name": "delight-im/auth",
@@ -279,13 +298,49 @@
                 "source": "https://github.com/delight-im/PHP-HTTP/tree/v2.0.0"
             },
             "time": "2016-07-21T15:05:01+00:00"
+        },
+        {
+            "name": "everton-hilario/csv-hilario",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/EvertonHilario/csv-hilario.git",
+                "reference": "982e802c97b297c990bdebf10a39fbe9adf4fb91"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/EvertonHilario/csv-hilario/zipball/982e802c97b297c990bdebf10a39fbe9adf4fb91",
+                "reference": "982e802c97b297c990bdebf10a39fbe9adf4fb91",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "5.7.27"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "CsvHilario\\ExportCsv\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Classe escrita em PHP que fornece a possibilidade de escrever arquivos de planilha CSV de uma forma muito simples e rápida. Basta passar os dados por um array bidimensional para poder fazer o download do arquivo.",
+            "support": {
+                "issues": "https://github.com/EvertonHilario/csv-hilario/issues",
+                "source": "https://github.com/EvertonHilario/csv-hilario/tree/1.6"
+            },
+            "time": "2018-10-05T14:28:03+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "delight-im/auth": 20
+        "delight-im/auth": 20,
+        "everton-hilario/csv-hilario": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

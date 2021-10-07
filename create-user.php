@@ -1,5 +1,5 @@
 <?php
-require __DIR__ . '/head.php' 
+// require __DIR__ . '/head.php' 
 ?>
 <title>Painel Adminsitrativo - CMS Basico</title>
 <link rel="stylesheet" href="style/layout.css">

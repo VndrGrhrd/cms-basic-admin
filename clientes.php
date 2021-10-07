@@ -15,7 +15,7 @@ require __DIR__ . '/head.php'
         <section id="content-nav">
             <div id="content-page">
                 <div>
-                    <img src="/image/Hiper-game-60-anos.png" alt="" style="width: 300px; display: block; margin: 0 auto;">
+                    <h1>Relatório de Clientes</h1>
                 </div>
                 <div style="display: flex;justify-content: space-between;flex-direction: row;">
                     <div style=" flex: none;">

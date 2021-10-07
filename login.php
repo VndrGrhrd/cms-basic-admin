@@ -1,3 +1,11 @@
+<?php
+require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . '/source/Auth.php';
+
+if ($auth->isLoggedIn()) {
+    header('Location: /admin');
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -8,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style\login.css">
+    <link rel="stylesheet" href="style/login.css">
     <title>Login Admin</title>
 </head>
 
@@ -24,8 +32,8 @@
                 <p id="text_digit"></p>
             </div>
             <div>
-                <form id="form_login" method="post">
-                    <!-- <form action="source/auth/login.php" method="post"> -->
+                <!-- <form id="form_login" method="post">    -->
+                    <form action="/admin/source/auth/login.php" method="post">
                     <div class="label">
                         <input placeholder="Digite seu email" type="email" name="email" id="email" style="display: none;">
                     </div>
@@ -34,7 +42,7 @@
                         </label>
                     </div>
                     <div class="label">
-                        <input id="send_login" type="submit" value="ENTRAR" style="display: none;">
+                        <input  type="submit" value="ENTRAR" style="display: none;">
                     </div>
                 </form>
             </div>
@@ -46,7 +54,7 @@
         // Maquina de escrever
         window.addEventListener('load', function() {
             let text = document.getElementById("text_digit")
-            let texto = "Bem vindo a área de administração de seu site. Digite credenciais para entrar para acessar"
+            let texto = "Bem vindo a área de administração do Hiper Game Badotti. Digite credenciais para acessar"
             const email = document.getElementById("email")
             const password = document.getElementById("password")
             const send_login = document.getElementById("send_login")

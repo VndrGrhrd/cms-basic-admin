@@ -1,10 +1,11 @@
 {
-    "name": "teste/datalayer",
+    "name": "vndrgrhrd/cms-basic-admin",
     "description": "teste back em php",
     "type": "project",
     "require": {
-        "coffeecode/datalayer": "1.1.8",
-        "delight-im/auth": "dev-master"
+        "catfan/medoo": "2.1.*",
+        "delight-im/auth": "dev-master",
+        "everton-hilario/csv-hilario": "dev-master"
     },
     "license": "private",
     "autoload": {
@@ -17,8 +18,8 @@
     },
     "authors": [
         {
-            "name": "webvoxbrazil",
-            "email": "web@voxbrazil.com.br"
+            "name": "VndrGrhrd",
+            "email": "vando124@gmail.com"
         }
     ],
     "minimum-stability": "dev"

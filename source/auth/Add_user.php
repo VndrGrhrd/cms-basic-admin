@@ -4,7 +4,8 @@ require __DIR__ . '/../Auth.php';
 
 try {
     $userId = $auth->register($_POST['email'], $_POST['password'], $_POST['username'], function ($selector, $token) {
-        header('Location: http://localhost/admin:composer/verify_email.php?selector=' . \urlencode($selector) . '&token=' . \urlencode($token));
+        // header('Location: http://localhost/admin:composer/verify_email.php?selector=' . \urlencode($selector) . '&token=' . \urlencode($token));
+        echo'cadastro realizado com sucesso!';
     });
 } catch (\Delight\Auth\InvalidEmailException $e) {
     die('Endereço de email invalido');
