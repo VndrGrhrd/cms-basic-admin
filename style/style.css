@@ -1,0 +1,61 @@
+h1 {
+  font-size: 2em;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  line-height: 2;
+  border-radius: 8px;
+  border: 1px solid var(--preto);
+  width: 100%;
+}
+input[type="submit"],
+input[type="button"] {
+  margin: 20px 0;
+  padding: 0.2em 1.5em;
+  font-size: 17px;
+  border-radius: 10px;
+  background: #fff;
+  font-weight: 600;
+  border: 1px solid var(--preto);
+}
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background: var(--turquesa);
+}
+.form-user {
+  width: 500px;
+  margin: 0 auto;
+  
+}
+select {
+  line-height: 2;
+  background: #fff;
+  margin: 0 10px;
+  border-radius: 5px;
+  padding: 5px;
+}
+.user-data input[type="text"]{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+color: var(--preto);
+opacity: 1;
+  background: transparent;
+  font-weight: 400;
+  border:none;
+}
+.user-data input[type="submit"]{
+  margin: -5px 0 5px;
+  padding: 1px 10px;
+  font-size: 17px;
+  border-radius: 10px;
+  background: #fff;
+  font-weight: 600;
+  border: 1px solid var(--preto);
+}
+div.row.row-data-user {
+  border-bottom: 1px solid var(--preto);
+}
